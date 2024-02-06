@@ -1,0 +1,84 @@
+/* Home.css */
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: -250px;
+    margin-left: 400px;
+  }
+  
+.welcome-message {
+    align-items: center;
+    font-size: 27px;
+    color: #007bff;
+    font-family: fantasy;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+  }
+
+.promo-section {
+    margin-bottom: 20px;
+}
+  
+.promo-text {
+    font-size: 24px;
+}
+
+.login-button {
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px; 
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Shine effect */
+  .login-button::before {
+    content: '';
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      /* #00fffc, */
+      transparent);
+    transform: translate(-100%);
+    transition:0.6s;
+    position: absolute;
+  }
+  
+  .login-button:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px
+    #00fffc;
+  }
+  
+  .search-section {
+    margin-bottom: 20px;
+  }
+  
+  .search-text {
+    font-size: 18px;
+  }
+  
+  .search-box {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Add your styles for the carousel here */
+  
